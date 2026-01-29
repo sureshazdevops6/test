@@ -39,7 +39,8 @@ jobs:
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@v4.8.0
         with:
-          target: publish
+          target-folder: publish
+          folder: ./publish
         
   deploy:
     needs: build
